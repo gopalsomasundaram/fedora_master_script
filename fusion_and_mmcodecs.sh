@@ -6,7 +6,7 @@ if [[ -z "$fusion_check" ]]; then
 	sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
 else
 	if [[ "$fusion_check" =~ "rpmfusion-free" ]]; then
-		echo fusion-free repository present;
+		echo fusion-free alrearepository present;
 	fi
 	if [[ "$fusion_check" =~ "rpmfusion-nonfree" ]]; then
 		echo fusion-nonfree repository present;
